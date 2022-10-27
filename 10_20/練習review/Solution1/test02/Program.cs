@@ -10,20 +10,22 @@ namespace test02
 	{
 		static void Main(string[] args)
 		{
-			////等腰
+			//等腰
 
-			//int rows = 5;
+			int rows = 5;
 
-			//for (int i = 1; i <= rows; i++)
-			//{ //空白
-			//	string sapce = new string(' ', rows - 1);
-
-
-			//	//星號
-			//	string stars = new string('*', 2 * i - 1);
+			for (int i = 1; i <= rows; i++)
+			{ //空白
+				string sapce = new string(' ', rows - 1);
 
 
-			//}
+				//星號
+				string stars = new string('*', 2 * i - 1);
+				string row = sapce + stars;
+				Console.WriteLine(row);
+
+			}
+			
 
 			//string stars = string.Empty;
 
@@ -34,14 +36,14 @@ namespace test02
 
 			//三種
 
-			int rows = 5;
-			for (int i =1; i<=rows; i++)
-			{ string row = new string('*,2*i-1.'),}
+			//int rows = 5;
+			//for (int i =1; i<=rows; i++)
+			//{ string row = new string('*,2*i-1.'),}
 
 
 
 
 
 		}
-	}
+		}
 }
