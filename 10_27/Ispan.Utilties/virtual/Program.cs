@@ -13,9 +13,17 @@ namespace @virtual
 			var emp = new Employee();
 			emp.salary = 30000;
 			int result = emp.Getsalary();
-			Console.WriteLine(result);
-			
-			
+			//Console.WriteLine(result);
+			var emp2 = new sales();
+			emp2.salary = 30000;
+			emp2.bonus = 15000;
+		
+            int[] resul = { emp.salary, emp2.Getsalary() };
+
+			foreach (var item in resul)
+			{
+				Console.WriteLine( item);	
+			}
 			
 
 		}
