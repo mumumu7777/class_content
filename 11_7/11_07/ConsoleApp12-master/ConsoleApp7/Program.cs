@@ -39,13 +39,13 @@ namespace ConsoleApp7
         public int Chinese { get; set; }
         public int Math { get; set; }
 
-        public bool Pass 
+        public bool Pass
         {
-            get 
+            get
             {
                 return (English + Chinese + Math) / 3 >= 60;
             }
-             
+
         }
 
 

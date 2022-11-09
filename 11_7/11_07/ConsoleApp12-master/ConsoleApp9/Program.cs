@@ -47,7 +47,7 @@ namespace ConsoleApp9
     {
         public static Buyer ToBuyer(this Member source)
         {
-            return new Buyer { Id = source.Id, Name = source.MemberName };
+            return new Buyer { Id = source.Id , Name = source.MemberName };
         }
     }
     public class Member

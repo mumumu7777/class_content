@@ -23,7 +23,7 @@ namespace ConsoleApp4
             bool isOdd = Predicate(55, n => n % 2 == 1);//判斷是否為奇數
 
             Console.WriteLine(isOdd);
-
+            
         }
 
         /// <summary>

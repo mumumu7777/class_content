@@ -13,6 +13,8 @@ namespace ConsoleApp6
             var items = Enumerable.Range(1, 30);
             var evenItems = items.Where(num => num % 2 == 0);
 
+
+
             foreach(var item in evenItems)
             {
                 Console.WriteLine(item);

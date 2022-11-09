@@ -21,7 +21,7 @@ namespace 作業練習
 
             string value = "0123456789";
             string result3 = MyMath.Left(value, 3);
-            string result4 = value.Left(4);
+            string result4 = value.Left1(4);
 
             
 
@@ -39,7 +39,7 @@ namespace 作業練習
         {
             return source.Substring(0,length);
         }
-        public static string Left(this string source,int length)
+        public static string Left1(this string source,int length)
         {
             if (string.IsNullOrEmpty(source)) return string.Empty;
             if(length <= 0) return string.Empty;
