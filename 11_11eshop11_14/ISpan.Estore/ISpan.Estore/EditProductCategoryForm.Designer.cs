@@ -101,6 +101,7 @@
 			this.Controls.Add(this.label1);
 			this.Name = "EditProductCategoryForm";
 			this.Text = "EditProductCategoryForm";
+			this.Load += new System.EventHandler(this.EditProductCategoryForm_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

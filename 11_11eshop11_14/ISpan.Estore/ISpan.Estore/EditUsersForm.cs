@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ISpan.Estore
 {
-	public partial class EditProductionForm : Form
+	public partial class EditUsersForm : Form
 	{
-		public EditProductionForm()
+		public EditUsersForm()
 		{
 			InitializeComponent();
 		}

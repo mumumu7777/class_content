@@ -75,5 +75,10 @@ namespace ISpan.Estore
 			this.DialogResult = DialogResult.OK;
 
 		}
+
+		private void EditProductCategoryForm_Load(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

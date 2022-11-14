@@ -37,6 +37,10 @@
       <HintPath>..\..\..\11_10\ispantest\ISpan.Utility\bin\Debug\ISpan.Utility.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -61,6 +65,12 @@
     <Compile Include="CreateProductForm.Designer.cs">
       <DependentUpon>CreateProductForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreatUsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatUsersForm.Designer.cs">
+      <DependentUpon>CreatUsersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditProductCategoryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +83,15 @@
     <Compile Include="EditProductionForm.Designer.cs">
       <DependentUpon>EditProductionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditUsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUsersForm.Designer.cs">
+      <DependentUpon>EditUsersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ViewModels\Class1.cs" />
+    <Compile Include="Models\ViewModels\ProductIndexView.cs" />
+    <Compile Include="Models\ViewModels\UserIndexVM.cs" />
     <Compile Include="ProductCategoriesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,14 +107,29 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Infra\Extensions\stringExtension.cs" />
+    <Compile Include="UsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersForm.Designer.cs">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CreateProductCategoryForm.resx">
       <DependentUpon>CreateProductCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateProductForm.resx">
+      <DependentUpon>CreateProductForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditProductCategoryForm.resx">
       <DependentUpon>EditProductCategoryForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditProductionForm.resx">
+      <DependentUpon>EditProductionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProductCategoriesForm.resx">
       <DependentUpon>ProductCategoriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsForm.resx">
+      <DependentUpon>ProductsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,6 +140,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\ISpan.Estore.Models.ViewModels.ProductCategoryVM.datasource" />
+    <None Include="Properties\DataSources\ISpan.Estore.Models.ViewModels.ProductIndexView.datasource" />
+    <None Include="Properties\DataSources\ISpan.Estore.Models.ViewModels.ProductVM.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

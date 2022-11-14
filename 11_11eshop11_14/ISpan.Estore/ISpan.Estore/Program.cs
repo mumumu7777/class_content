@@ -16,7 +16,7 @@ namespace ISpan.Estore
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new ProductsForm());
+			Application.Run(new UsersForm());
 		}
 	}
 }

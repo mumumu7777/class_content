@@ -54,8 +54,8 @@ namespace ISpan.Utility
 				
 				SqlDataAdapter adapter = new SqlDataAdapter(command);
 				DataSet dataSet = new DataSet();
-				adapter.Fill(dataSet, "hello");
-				return dataSet.Tables["hello"];
+				adapter.Fill(dataSet, "default");
+				return dataSet.Tables["default"];
 				
 			}
 		}
