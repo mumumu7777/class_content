@@ -140,10 +140,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UsersForm.resx">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\ISpan.Estore.Models.ViewModels.ProductCategoryVM.datasource" />
     <None Include="Properties\DataSources\ISpan.Estore.Models.ViewModels.ProductIndexView.datasource" />
     <None Include="Properties\DataSources\ISpan.Estore.Models.ViewModels.ProductVM.datasource" />
+    <None Include="Properties\DataSources\ISpan.Estore.Models.ViewModels.uservm.datasource" />
+    <None Include="Properties\DataSources\UsersForm.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
