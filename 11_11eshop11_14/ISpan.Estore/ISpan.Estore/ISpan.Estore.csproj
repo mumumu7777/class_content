@@ -89,7 +89,22 @@
     <Compile Include="EditUsersForm.Designer.cs">
       <DependentUpon>EditUsersForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Infra\ValidationHelper.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Services\UserService.cs" />
     <Compile Include="Models\ViewModels\Class1.cs" />
+    <Compile Include="Models\ViewModels\LoginVM.cs" />
     <Compile Include="Models\ViewModels\ProductIndexView.cs" />
     <Compile Include="Models\ViewModels\UserIndexVM.cs" />
     <Compile Include="ProductCategoriesForm.cs">
@@ -119,11 +134,23 @@
     <EmbeddedResource Include="CreateProductForm.resx">
       <DependentUpon>CreateProductForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CreatUsersForm.resx">
+      <DependentUpon>CreatUsersForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditProductCategoryForm.resx">
       <DependentUpon>EditProductCategoryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditProductionForm.resx">
       <DependentUpon>EditProductionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUsersForm.resx">
+      <DependentUpon>EditUsersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductCategoriesForm.resx">
       <DependentUpon>ProductCategoriesForm.cs</DependentUpon>
