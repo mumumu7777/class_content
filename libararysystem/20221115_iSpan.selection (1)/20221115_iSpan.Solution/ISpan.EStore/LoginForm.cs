@@ -1,6 +1,6 @@
-﻿using ISpan.Estore.Infra.Extensions;
-using ISpan.Estore.Models.Services;
-using ISpan.Estore.Models.ViewModels;
+﻿using ISpan.EStore.Infra;
+using ISpan.EStore.Models.Services;
+using ISpan.EStore.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ISpan.Estore
+namespace ISpan.EStore
 {
 	public partial class LoginForm : Form
 	{
@@ -20,46 +20,41 @@ namespace ISpan.Estore
 			InitializeComponent();
 		}
 
-		private void Loginbtn_Click(object sender, EventArgs e)
+		private void loginButton_Click(object sender, EventArgs e)
 		{
-			//將表單聯繫loginvm
-			 LoginVM model = new LoginVM
-			{
-				Account = Accounttxtbox.Text,
-				PassWord = Passwordtxtbox.Text
+			// 將表單欄位值繫結到view model
+			LoginVM model = new LoginVM { 
+				Account = accountTextBox.Text,
+				Password =passwordTextBox.Text
 			};
 
-
-			//驗證欄位是否正確
+			// 驗證欄位輸入是否正確
 			Dictionary<string, Control> map = new Dictionary<string, Control>(StringComparer.CurrentCultureIgnoreCase)
-		{
-			{ "account",Accounttxtbox},
-			{ "password",Passwordtxtbox},
-			
-		};
+			{
+				{"Account", accountTextBox},
+				{"Password", passwordTextBox},
+			};
+
 			bool isValid = ValidationHelper.Validate(model, map, errorProvider1);
 			if (!isValid) return;
 
-			//驗證帳密是否正確
-			bool result = new UserService().authenticate(model);
-			if (result == false)
+			// 判斷帳密是否正確
+			bool result = new UserService().Authenticate(model);
+			if(result == false)
 			{
 				MessageBox.Show("帳號或密碼錯誤");
 				return;
 			}
-			//若正確,開啟mainform
-			Accounttxtbox.Text = String.Empty;
-			passwordbtn.Text = String.Empty;
-			
+
+			// 若正確, 就開啟MainForm
+			accountTextBox.Text = String.Empty;
+			passwordTextBox.Text = String.Empty;
+
 			var frm = new MainForm();
 			frm.Owner = this;
 
 			frm.Show();
 			this.Hide();
-			//
-
-
-
 
 		}
 	}
