@@ -24,7 +24,7 @@ namespace LibararySystemDemo
 
 		private void DisplayBookClass()
 		{
-			string sql = @"SELECT * from bookclass order by id ";
+			string sql = @"SELECT * from bookclass order by classid ";
 			
 			bookclass = new SqlDBhelper("default").Select(sql, null);
 

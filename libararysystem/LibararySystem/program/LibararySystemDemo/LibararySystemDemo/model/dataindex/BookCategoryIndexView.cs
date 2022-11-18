@@ -8,10 +8,10 @@ namespace LibararySystemDemo.model.dataindex
 {
 	public class BookCategoryIndexView
 	{
-		public int id { get; set; }
+		public int BookID { get; set; }
 
 		public string BookName { get; set; }
-		public string BookClass { get; set; }
+		public string Class{ get; set; }
 
 		public string Author { get; set; }
 
@@ -21,12 +21,12 @@ namespace LibararySystemDemo.model.dataindex
 
 	}
 
-	public class BookCategoryIndexView2
+	public class BookCategoryView
 	{
-		public int id { get; set; }
+		public int BookID { get; set; }
 
 		public string BookName { get; set; }
-		public string BookClass { get; set; }
+		public string Class { get; set; }
 
 		public string Author { get; set; }
 

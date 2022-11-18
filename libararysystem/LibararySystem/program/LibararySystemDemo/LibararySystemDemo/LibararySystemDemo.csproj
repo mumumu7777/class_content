@@ -81,6 +81,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Properties\DataSources\LibararySystemDemo.model.dataindex.BookCategoryIndexView.datasource" />
+    <None Include="Properties\DataSources\LibararySystemDemo.model.dataindex.BookCategoryView.datasource" />
     <None Include="Properties\DataSources\LibararySystemDemo.model.dataindex.BookClassIndexView.datasource" />
     <None Include="Properties\DataSources\Program.datasource" />
   </ItemGroup>
@@ -90,6 +91,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BookClass.resx">
       <DependentUpon>BookClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatBookCategory.resx">
+      <DependentUpon>CreatBookCategory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

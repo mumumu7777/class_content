@@ -9,7 +9,7 @@ namespace LibararySystemDemo.model.dataindex
 	public class BookClassIndexView
 	{
 
-		public int ID { get; set; }
+		public int ClassID { get; set; }
 
 		public string Class { get; set; }
 
