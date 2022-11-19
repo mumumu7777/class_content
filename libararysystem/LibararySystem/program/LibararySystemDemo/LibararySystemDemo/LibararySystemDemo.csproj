@@ -49,17 +49,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Books.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Books.Designer.cs">
+      <DependentUpon>Books.cs</DependentUpon>
+    </Compile>
     <Compile Include="BookCategory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BookCategory.Designer.cs">
       <DependentUpon>BookCategory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BookClass.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BookClass.Designer.cs">
-      <DependentUpon>BookClass.cs</DependentUpon>
     </Compile>
     <Compile Include="CreatBookCategory.cs">
       <SubType>Form</SubType>
@@ -73,24 +73,27 @@
     <Compile Include="EditBookCategory.Designer.cs">
       <DependentUpon>EditBookCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="model\dataindex\BooksView.cs" />
     <Compile Include="model\dataindex\BookCategoryIndexView.cs" />
-    <Compile Include="model\dataindex\BookClassIndexView.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Properties\DataSources\LibararySystemDemo.model.dataindex.BookCategoryIndexView.datasource" />
+    <None Include="Properties\DataSources\LibararySystemDemo.model.dataindex.BookCategoryIndexView1.datasource" />
     <None Include="Properties\DataSources\LibararySystemDemo.model.dataindex.BookCategoryView.datasource" />
     <None Include="Properties\DataSources\LibararySystemDemo.model.dataindex.BookClassIndexView.datasource" />
+    <None Include="Properties\DataSources\LibararySystemDemo.model.dataindex.BooksView.datasource" />
     <None Include="Properties\DataSources\Program.datasource" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Books.resx">
+      <DependentUpon>Books.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="BookCategory.resx">
       <DependentUpon>BookCategory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BookClass.resx">
-      <DependentUpon>BookClass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreatBookCategory.resx">
       <DependentUpon>CreatBookCategory.cs</DependentUpon>

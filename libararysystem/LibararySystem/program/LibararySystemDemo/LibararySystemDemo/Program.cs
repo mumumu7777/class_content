@@ -18,7 +18,7 @@ namespace LibararySystemDemo
 			{
 				Application.EnableVisualStyles();
 				Application.SetCompatibleTextRenderingDefault(false);
-				Application.Run(new CreatBookCategory());
+				Application.Run(new Books());
 			}	
 	}
 }
