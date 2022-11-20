@@ -1,6 +1,6 @@
 ﻿namespace LibararySystemDemo
 {
-	partial class CreatBookCategory
+	partial class CreatBooks
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -34,18 +34,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.categorycombobox = new System.Windows.Forms.ComboBox();
+            this.bookCategoryIndexViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bookClassIndexViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.IDtxtbox = new System.Windows.Forms.TextBox();
+            this.BookTXTBOX = new System.Windows.Forms.TextBox();
+            this.authortxtbox = new System.Windows.Forms.TextBox();
+            this.isbmtxtbox = new System.Windows.Forms.TextBox();
+            this.pbyeartxtbox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.SaveBtn = new System.Windows.Forms.Button();
-            this.bookCategoryIndexViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.bookClassIndexViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookCategoryIndexViewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookClassIndexViewBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -103,46 +103,51 @@
             this.categorycombobox.Size = new System.Drawing.Size(258, 32);
             this.categorycombobox.TabIndex = 1;
             this.categorycombobox.ValueMember = "CategoryID";
+            this.categorycombobox.SelectedIndexChanged += new System.EventHandler(this.categorycombobox_SelectedIndexChanged);
             // 
-            // textBox1
+            // bookCategoryIndexViewBindingSource
             // 
-            this.textBox1.Location = new System.Drawing.Point(384, 92);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 36);
-            this.textBox1.TabIndex = 2;
+            this.bookCategoryIndexViewBindingSource.DataSource = typeof(LibararySystemDemo.model.dataindex.BookCategoryIndexView);
             // 
-            // textBox2
+            // IDtxtbox
             // 
-            this.textBox2.Location = new System.Drawing.Point(384, 182);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(212, 36);
-            this.textBox2.TabIndex = 2;
+            this.IDtxtbox.Location = new System.Drawing.Point(384, 92);
+            this.IDtxtbox.Margin = new System.Windows.Forms.Padding(6);
+            this.IDtxtbox.Name = "IDtxtbox";
+            this.IDtxtbox.Size = new System.Drawing.Size(212, 36);
+            this.IDtxtbox.TabIndex = 2;
             // 
-            // textBox3
+            // BookTXTBOX
             // 
-            this.textBox3.Location = new System.Drawing.Point(384, 284);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(212, 36);
-            this.textBox3.TabIndex = 2;
+            this.BookTXTBOX.Location = new System.Drawing.Point(384, 182);
+            this.BookTXTBOX.Margin = new System.Windows.Forms.Padding(6);
+            this.BookTXTBOX.Name = "BookTXTBOX";
+            this.BookTXTBOX.Size = new System.Drawing.Size(212, 36);
+            this.BookTXTBOX.TabIndex = 2;
             // 
-            // textBox4
+            // authortxtbox
             // 
-            this.textBox4.Location = new System.Drawing.Point(384, 390);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(212, 36);
-            this.textBox4.TabIndex = 2;
+            this.authortxtbox.Location = new System.Drawing.Point(384, 284);
+            this.authortxtbox.Margin = new System.Windows.Forms.Padding(6);
+            this.authortxtbox.Name = "authortxtbox";
+            this.authortxtbox.Size = new System.Drawing.Size(212, 36);
+            this.authortxtbox.TabIndex = 2;
             // 
-            // textBox5
+            // isbmtxtbox
             // 
-            this.textBox5.Location = new System.Drawing.Point(384, 490);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(212, 36);
-            this.textBox5.TabIndex = 2;
+            this.isbmtxtbox.Location = new System.Drawing.Point(384, 390);
+            this.isbmtxtbox.Margin = new System.Windows.Forms.Padding(6);
+            this.isbmtxtbox.Name = "isbmtxtbox";
+            this.isbmtxtbox.Size = new System.Drawing.Size(212, 36);
+            this.isbmtxtbox.TabIndex = 2;
+            // 
+            // pbyeartxtbox
+            // 
+            this.pbyeartxtbox.Location = new System.Drawing.Point(384, 490);
+            this.pbyeartxtbox.Margin = new System.Windows.Forms.Padding(6);
+            this.pbyeartxtbox.Name = "pbyeartxtbox";
+            this.pbyeartxtbox.Size = new System.Drawing.Size(212, 36);
+            this.pbyeartxtbox.TabIndex = 2;
             // 
             // label5
             // 
@@ -177,21 +182,17 @@
             this.SaveBtn.UseVisualStyleBackColor = true;
             this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
-            // bookCategoryIndexViewBindingSource
-            // 
-            this.bookCategoryIndexViewBindingSource.DataSource = typeof(LibararySystemDemo.model.dataindex.BookCategoryIndexView);
-            // 
             // CreatBookCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(852, 898);
             this.Controls.Add(this.SaveBtn);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pbyeartxtbox);
+            this.Controls.Add(this.isbmtxtbox);
+            this.Controls.Add(this.authortxtbox);
+            this.Controls.Add(this.BookTXTBOX);
+            this.Controls.Add(this.IDtxtbox);
             this.Controls.Add(this.categorycombobox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -202,8 +203,8 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "CreatBookCategory";
             this.Text = "CreatBookCategory";
-            ((System.ComponentModel.ISupportInitialize)(this.bookClassIndexViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookCategoryIndexViewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookClassIndexViewBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,11 +217,11 @@
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.ComboBox categorycombobox;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.TextBox textBox4;
-		private System.Windows.Forms.TextBox textBox5;
+		private System.Windows.Forms.TextBox IDtxtbox;
+		private System.Windows.Forms.TextBox BookTXTBOX;
+		private System.Windows.Forms.TextBox authortxtbox;
+		private System.Windows.Forms.TextBox isbmtxtbox;
+		private System.Windows.Forms.TextBox pbyeartxtbox;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Button SaveBtn;

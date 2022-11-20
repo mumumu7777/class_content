@@ -102,7 +102,7 @@
             // 
             // Searchbtn
             // 
-            this.Searchbtn.BackColor = System.Drawing.Color.LavenderBlush;
+            this.Searchbtn.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.Searchbtn.Location = new System.Drawing.Point(1384, 102);
             this.Searchbtn.Margin = new System.Windows.Forms.Padding(6);
             this.Searchbtn.Name = "Searchbtn";
@@ -187,7 +187,7 @@
             // 
             // addbtn
             // 
-            this.addbtn.BackColor = System.Drawing.Color.LavenderBlush;
+            this.addbtn.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.addbtn.Location = new System.Drawing.Point(1384, 28);
             this.addbtn.Margin = new System.Windows.Forms.Padding(6);
             this.addbtn.Name = "addbtn";
@@ -258,6 +258,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.LavenderBlush;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn2,
@@ -266,11 +267,11 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.dataGridView1.DataSource = this.booksIndexViewBindingSource8;
-            this.dataGridView1.Location = new System.Drawing.Point(35, 300);
+            this.dataGridView1.Location = new System.Drawing.Point(35, 217);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 38;
-            this.dataGridView1.Size = new System.Drawing.Size(1551, 338);
+            this.dataGridView1.Size = new System.Drawing.Size(1551, 421);
             this.dataGridView1.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn2

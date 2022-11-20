@@ -37,7 +37,12 @@ namespace LibararySystemDemo
 
         private void addbtn_Click(object sender, EventArgs e)
         {
-
+            var FRM  = new CreatBooks();
+            DialogResult result = FRM.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                DisplayBookCategory();
+            }
         }
 
         private void Searchbtn_Click(object sender, EventArgs e)

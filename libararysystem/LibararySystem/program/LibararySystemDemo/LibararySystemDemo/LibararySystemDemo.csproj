@@ -61,11 +61,11 @@
     <Compile Include="BookCategory.Designer.cs">
       <DependentUpon>BookCategory.cs</DependentUpon>
     </Compile>
-    <Compile Include="CreatBookCategory.cs">
+    <Compile Include="CreatBooks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreatBookCategory.Designer.cs">
-      <DependentUpon>CreatBookCategory.cs</DependentUpon>
+    <Compile Include="CreatBooks.Designer.cs">
+      <DependentUpon>CreatBooks.cs</DependentUpon>
     </Compile>
     <Compile Include="EditBookCategory.cs">
       <SubType>Form</SubType>
@@ -73,6 +73,7 @@
     <Compile Include="EditBookCategory.Designer.cs">
       <DependentUpon>EditBookCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="extensiontool\stringextension.cs" />
     <Compile Include="model\dataindex\BooksView.cs" />
     <Compile Include="model\dataindex\BookCategoryIndexView.cs" />
     <Compile Include="Program.cs" />
@@ -95,8 +96,8 @@
     <EmbeddedResource Include="BookCategory.resx">
       <DependentUpon>BookCategory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreatBookCategory.resx">
-      <DependentUpon>CreatBookCategory.cs</DependentUpon>
+    <EmbeddedResource Include="CreatBooks.resx">
+      <DependentUpon>CreatBooks.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
