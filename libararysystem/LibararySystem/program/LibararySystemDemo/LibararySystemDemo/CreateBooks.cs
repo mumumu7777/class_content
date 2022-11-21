@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace LibararySystemDemo
 {
-	public partial class CreatBooks : Form
+	public partial class CreateBooks : Form
 	{
-		public CreatBooks()
+		public CreateBooks()	
 		{
 			InitializeComponent();
 			InitForm();
@@ -36,20 +36,20 @@ namespace LibararySystemDemo
         private void InitForm()
         {
 
-            categorycombobox.DropDownStyle = ComboBoxStyle.DropDownList;
+			categorycombobox.DropDownStyle = ComboBoxStyle.DropDownList;
 
-            var sql = "SELECT * FROM BookCategory order by CategoryName";
-            var dbHelper = new SqlDBhelper("default");
+			var sql = "SELECT * FROM BookCategory order by CategoryName";
+			var dbHelper = new SqlDBhelper("default");
 
-            List<BookCategoryIndexView> categories = dbHelper.Select(sql, null)
-                .AsEnumerable()
-                .Select(row => ParseTobookcategoryIndexVM(row))
-                .Prepend(new BookCategoryIndexView { CategoryID = 0, CategoryName = String.Empty })
-                .ToList();
+			List<BookCategoryIndexView> categories = dbHelper.Select(sql, null)
+				.AsEnumerable()
+				.Select(row => ParseTobookcategoryIndexVM(row))
+				.Prepend(new BookCategoryIndexView { CategoryID = 0, CategoryName = String.Empty })
+				.ToList();
 
-            this.categorycombobox.DataSource = categories;
+			this.categorycombobox.DataSource = categories;
 
-        }
+		}
 
         private BooksView TOBooksIndex(DataRow row)
 		{
@@ -103,7 +103,7 @@ namespace LibararySystemDemo
 
 			//如果通過驗證,就新增記錄
 			string sql = @"INSERT INTO BOOKS
-(CategoryId,BookName,Author, ISBN,PublishYear,)
+(CategoryId,BookName,Author, ISBN,PublishYear)
 VALUES
 (@CategoryId,@BookName, @Author,@ISBN,@PublishYear)";
 
@@ -121,6 +121,11 @@ VALUES
 		}
 
 		private void categorycombobox_SelectedIndexChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void CreateBooks_Load(object sender, EventArgs e)
 		{
 
 		}

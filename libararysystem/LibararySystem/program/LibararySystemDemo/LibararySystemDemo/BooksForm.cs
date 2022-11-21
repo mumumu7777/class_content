@@ -16,42 +16,37 @@ using System.Xml.Linq;
 
 namespace LibararySystemDemo
 {
-    public partial class Books : Form
+    public partial class BooksForm : Form
     {
-        private BooksIndexView[] bookCategories = null;
+        private BooksIndexView[] books = null;
 
-        public Books()
+        public BooksForm()
         {
 
             InitializeComponent();
             InitForm();
-            DisplayBookCategory();
-
-
+            DisplayBook();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+      
 
         private void addbtn_Click(object sender, EventArgs e)
         {
-            var FRM  = new CreatBooks();
+            var FRM  = new CreateBooks();
             DialogResult result = FRM.ShowDialog();
             if (result == DialogResult.OK)
             {
-                DisplayBookCategory();
+                DisplayBook();
             }
         }
 
         private void Searchbtn_Click(object sender, EventArgs e)
         {
-            DisplayBookCategory();
+            DisplayBook();
 
         }
 
-        private void DisplayBookCategory()
+        private void DisplayBook()
         {
             //string sql = @"SELECT * FROM Books join BookCategory on Books.CategoryID = BookCategory.CategoryID";
             string sql = @"SELECT c.* FROM
@@ -139,12 +134,12 @@ namespace LibararySystemDemo
             //sql += " ORDER BY BookID ";
             var dbHelper = new SqlDBhelper("default");
 
-            bookCategories = dbHelper.Select(sql, parameters.ToArray())
+            books = dbHelper.Select(sql, parameters.ToArray())
                 .AsEnumerable()
                 .Select(row => ParseTobookcategoryIndexVM(row))
                 .ToArray();
            
-            BindData(bookCategories);
+            BindData(books);
         }
 
         private void BindData(BooksIndexView[] data)
@@ -190,7 +185,7 @@ namespace LibararySystemDemo
                 BookName = row.Field<string>("BookName"),
                 ISBN = row.Field<string>("ISBN"),
                 PublishYear = row.Field<int>("PublishYear"),
-                //BookID = row.Field<int>("BookID")
+                BookID = row.Field<int>("BookID")
             };
         }
 
@@ -198,6 +193,30 @@ namespace LibararySystemDemo
         {
 
         }
+
+        private void dataGridView1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+			int rowIndx = e.RowIndex;
+
+			if (rowIndx < 0) return;
+
+			BooksIndexView row = this.books[rowIndx]; // 使用者點到的那一筆記錄
+
+			int id = row.BookID; // 使用者點到的那一筆記錄的id值
+
+			// 把 id 傳給編輯表單的建構函數
+			var frm = new EditBooksForm(id);
+
+			if (frm.ShowDialog() == DialogResult.OK)
+			{
+				DisplayBook();
+			}
+		}
 
 
 
