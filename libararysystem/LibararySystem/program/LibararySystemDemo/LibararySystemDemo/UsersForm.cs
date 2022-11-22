@@ -19,6 +19,7 @@ namespace LibararySystemDemo
 		public UsersForm()
 		{
 			InitializeComponent();
+			DisplayUsers();
 		}
 
 		private void addNewButton_Click(object sender, EventArgs e)

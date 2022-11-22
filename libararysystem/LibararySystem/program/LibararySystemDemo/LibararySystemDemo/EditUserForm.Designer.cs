@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditUserForm));
 			this.updateButton = new System.Windows.Forms.Button();
 			this.deleteButton = new System.Windows.Forms.Button();
 			this.nameTextBox = new System.Windows.Forms.TextBox();
@@ -44,29 +45,29 @@
 			// updateButton
 			// 
 			this.updateButton.Location = new System.Drawing.Point(176, 184);
-			this.updateButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.updateButton.Margin = new System.Windows.Forms.Padding(4);
 			this.updateButton.Name = "updateButton";
 			this.updateButton.Size = new System.Drawing.Size(88, 31);
 			this.updateButton.TabIndex = 13;
-			this.updateButton.Text = "Update";
+			this.updateButton.Text = "更新";
 			this.updateButton.UseVisualStyleBackColor = true;
 			this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
 			// 
 			// deleteButton
 			// 
 			this.deleteButton.Location = new System.Drawing.Point(271, 184);
-			this.deleteButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.deleteButton.Margin = new System.Windows.Forms.Padding(4);
 			this.deleteButton.Name = "deleteButton";
 			this.deleteButton.Size = new System.Drawing.Size(88, 31);
 			this.deleteButton.TabIndex = 11;
-			this.deleteButton.Text = "Delete";
+			this.deleteButton.Text = "刪除";
 			this.deleteButton.UseVisualStyleBackColor = true;
 			this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
 			// 
 			// nameTextBox
 			// 
 			this.nameTextBox.Location = new System.Drawing.Point(159, 147);
-			this.nameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.nameTextBox.Margin = new System.Windows.Forms.Padding(4);
 			this.nameTextBox.Name = "nameTextBox";
 			this.nameTextBox.Size = new System.Drawing.Size(199, 23);
 			this.nameTextBox.TabIndex = 9;
@@ -74,6 +75,7 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
+			this.label3.BackColor = System.Drawing.Color.White;
 			this.label3.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.label3.Location = new System.Drawing.Point(96, 151);
 			this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -85,7 +87,7 @@
 			// passwordTextBox
 			// 
 			this.passwordTextBox.Location = new System.Drawing.Point(159, 109);
-			this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4);
 			this.passwordTextBox.Name = "passwordTextBox";
 			this.passwordTextBox.PasswordChar = '*';
 			this.passwordTextBox.Size = new System.Drawing.Size(199, 23);
@@ -94,6 +96,7 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
+			this.label2.BackColor = System.Drawing.Color.White;
 			this.label2.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.label2.Location = new System.Drawing.Point(96, 113);
 			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -105,7 +108,7 @@
 			// accountTextBox
 			// 
 			this.accountTextBox.Location = new System.Drawing.Point(159, 72);
-			this.accountTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.accountTextBox.Margin = new System.Windows.Forms.Padding(4);
 			this.accountTextBox.Name = "accountTextBox";
 			this.accountTextBox.Size = new System.Drawing.Size(199, 23);
 			this.accountTextBox.TabIndex = 7;
@@ -113,6 +116,7 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
+			this.label1.BackColor = System.Drawing.Color.White;
 			this.label1.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.label1.Location = new System.Drawing.Point(96, 76);
 			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -129,7 +133,10 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(512, 316);
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.ClientSize = new System.Drawing.Size(501, 302);
 			this.Controls.Add(this.updateButton);
 			this.Controls.Add(this.deleteButton);
 			this.Controls.Add(this.nameTextBox);
@@ -139,7 +146,7 @@
 			this.Controls.Add(this.accountTextBox);
 			this.Controls.Add(this.label1);
 			this.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "EditUserForm";
 			this.Text = "EditUserForm";
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

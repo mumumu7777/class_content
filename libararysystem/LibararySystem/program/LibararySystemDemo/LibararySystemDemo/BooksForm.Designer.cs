@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BooksForm));
 			this.bookclasscombobox = new System.Windows.Forms.ComboBox();
 			this.bookCategoryIndexViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.Searchbtn = new System.Windows.Forms.Button();
@@ -155,6 +156,7 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
+			this.label1.BackColor = System.Drawing.Color.AliceBlue;
 			this.label1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.label1.Location = new System.Drawing.Point(3, 15);
 			this.label1.Name = "label1";
@@ -165,6 +167,7 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
+			this.label2.BackColor = System.Drawing.Color.AliceBlue;
 			this.label2.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.label2.Location = new System.Drawing.Point(141, 15);
 			this.label2.Name = "label2";
@@ -175,6 +178,7 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
+			this.label3.BackColor = System.Drawing.Color.AliceBlue;
 			this.label3.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.label3.Location = new System.Drawing.Point(261, 15);
 			this.label3.Name = "label3";
@@ -185,6 +189,7 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
+			this.label4.BackColor = System.Drawing.Color.AliceBlue;
 			this.label4.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.label4.Location = new System.Drawing.Point(376, 15);
 			this.label4.Name = "label4";
@@ -226,6 +231,7 @@
 			// label5
 			// 
 			this.label5.AutoSize = true;
+			this.label5.BackColor = System.Drawing.Color.AliceBlue;
 			this.label5.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.label5.Location = new System.Drawing.Point(496, 14);
 			this.label5.Name = "label5";
@@ -297,7 +303,7 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
 			this.dataGridView1.DataSource = this.booksshowViewBindingSource1;
-			this.dataGridView1.Location = new System.Drawing.Point(12, 114);
+			this.dataGridView1.Location = new System.Drawing.Point(12, 98);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowTemplate.Height = 24;
 			this.dataGridView1.Size = new System.Drawing.Size(738, 225);
@@ -347,6 +353,8 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Pink;
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(762, 351);
 			this.Controls.Add(this.dataGridView1);
 			this.Controls.Add(this.label5);

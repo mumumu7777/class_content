@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateBooks));
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
@@ -49,8 +50,9 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
+			this.label2.BackColor = System.Drawing.Color.LavenderBlush;
 			this.label2.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.label2.Location = new System.Drawing.Point(68, 53);
+			this.label2.Location = new System.Drawing.Point(29, 35);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(39, 19);
 			this.label2.TabIndex = 0;
@@ -59,8 +61,9 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
+			this.label3.BackColor = System.Drawing.Color.LavenderBlush;
 			this.label3.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.label3.Location = new System.Drawing.Point(68, 107);
+			this.label3.Location = new System.Drawing.Point(29, 89);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(39, 19);
 			this.label3.TabIndex = 0;
@@ -69,8 +72,9 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
+			this.label4.BackColor = System.Drawing.Color.LavenderBlush;
 			this.label4.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.label4.Location = new System.Drawing.Point(68, 160);
+			this.label4.Location = new System.Drawing.Point(29, 142);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(45, 19);
 			this.label4.TabIndex = 0;
@@ -81,7 +85,7 @@
 			this.categorycombobox.DataSource = this.bookCategoryIndexViewBindingSource;
 			this.categorycombobox.DisplayMember = "CategoryName";
 			this.categorycombobox.FormattingEnabled = true;
-			this.categorycombobox.Location = new System.Drawing.Point(167, 262);
+			this.categorycombobox.Location = new System.Drawing.Point(128, 244);
 			this.categorycombobox.Name = "categorycombobox";
 			this.categorycombobox.Size = new System.Drawing.Size(121, 20);
 			this.categorycombobox.TabIndex = 1;
@@ -94,28 +98,28 @@
 			// 
 			// BookTXTBOX
 			// 
-			this.BookTXTBOX.Location = new System.Drawing.Point(167, 53);
+			this.BookTXTBOX.Location = new System.Drawing.Point(128, 35);
 			this.BookTXTBOX.Name = "BookTXTBOX";
 			this.BookTXTBOX.Size = new System.Drawing.Size(100, 22);
 			this.BookTXTBOX.TabIndex = 2;
 			// 
 			// authortxtbox
 			// 
-			this.authortxtbox.Location = new System.Drawing.Point(167, 104);
+			this.authortxtbox.Location = new System.Drawing.Point(128, 86);
 			this.authortxtbox.Name = "authortxtbox";
 			this.authortxtbox.Size = new System.Drawing.Size(100, 22);
 			this.authortxtbox.TabIndex = 2;
 			// 
 			// isbmtxtbox
 			// 
-			this.isbmtxtbox.Location = new System.Drawing.Point(167, 157);
+			this.isbmtxtbox.Location = new System.Drawing.Point(128, 139);
 			this.isbmtxtbox.Name = "isbmtxtbox";
 			this.isbmtxtbox.Size = new System.Drawing.Size(100, 22);
 			this.isbmtxtbox.TabIndex = 2;
 			// 
 			// pbyeartxtbox
 			// 
-			this.pbyeartxtbox.Location = new System.Drawing.Point(167, 207);
+			this.pbyeartxtbox.Location = new System.Drawing.Point(128, 189);
 			this.pbyeartxtbox.Name = "pbyeartxtbox";
 			this.pbyeartxtbox.Size = new System.Drawing.Size(100, 22);
 			this.pbyeartxtbox.TabIndex = 2;
@@ -123,8 +127,9 @@
 			// label5
 			// 
 			this.label5.AutoSize = true;
+			this.label5.BackColor = System.Drawing.Color.LavenderBlush;
 			this.label5.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.label5.Location = new System.Drawing.Point(68, 207);
+			this.label5.Location = new System.Drawing.Point(29, 189);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(69, 19);
 			this.label5.TabIndex = 0;
@@ -133,8 +138,9 @@
 			// label6
 			// 
 			this.label6.AutoSize = true;
+			this.label6.BackColor = System.Drawing.Color.LavenderBlush;
 			this.label6.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.label6.Location = new System.Drawing.Point(68, 262);
+			this.label6.Location = new System.Drawing.Point(29, 244);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(39, 19);
 			this.label6.TabIndex = 0;
@@ -144,7 +150,7 @@
 			// 
 			this.SaveBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.SaveBtn.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.SaveBtn.Location = new System.Drawing.Point(158, 326);
+			this.SaveBtn.Location = new System.Drawing.Point(78, 302);
 			this.SaveBtn.Name = "SaveBtn";
 			this.SaveBtn.Size = new System.Drawing.Size(100, 38);
 			this.SaveBtn.TabIndex = 3;
@@ -157,7 +163,9 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.LightPink;
-			this.ClientSize = new System.Drawing.Size(380, 418);
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.ClientSize = new System.Drawing.Size(290, 384);
 			this.Controls.Add(this.SaveBtn);
 			this.Controls.Add(this.pbyeartxtbox);
 			this.Controls.Add(this.isbmtxtbox);

@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateBooksCategoryform));
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.button1 = new System.Windows.Forms.Button();
@@ -43,8 +44,9 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
+			this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.label1.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.label1.Location = new System.Drawing.Point(69, 58);
+			this.label1.Location = new System.Drawing.Point(52, 58);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(69, 19);
 			this.label1.TabIndex = 1;
@@ -54,7 +56,7 @@
 			// 
 			this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.button1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.button1.Location = new System.Drawing.Point(117, 124);
+			this.button1.Location = new System.Drawing.Point(110, 113);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(76, 25);
 			this.button1.TabIndex = 2;
@@ -67,6 +69,8 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Pink;
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(329, 203);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.label1);

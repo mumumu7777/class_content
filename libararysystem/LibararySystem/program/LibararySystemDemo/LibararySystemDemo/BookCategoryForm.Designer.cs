@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookCategoryForm));
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.bookClassIndexViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
@@ -57,7 +58,7 @@
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowHeadersWidth = 82;
 			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(300, 210);
+			this.dataGridView1.Size = new System.Drawing.Size(323, 210);
 			this.dataGridView1.TabIndex = 0;
 			this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
 			// 
@@ -65,7 +66,7 @@
 			// 
 			this.Addbtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.Addbtn.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.Addbtn.Location = new System.Drawing.Point(238, 27);
+			this.Addbtn.Location = new System.Drawing.Point(261, 29);
 			this.Addbtn.Name = "Addbtn";
 			this.Addbtn.Size = new System.Drawing.Size(80, 31);
 			this.Addbtn.TabIndex = 1;
@@ -98,7 +99,9 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.LightPink;
-			this.ClientSize = new System.Drawing.Size(350, 323);
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.ClientSize = new System.Drawing.Size(375, 306);
 			this.Controls.Add(this.Addbtn);
 			this.Controls.Add(this.dataGridView1);
 			this.Name = "BookCategoryForm";
